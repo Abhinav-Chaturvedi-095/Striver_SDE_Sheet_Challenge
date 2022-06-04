@@ -7,6 +7,7 @@ void setZeros(vector<vector<int>> &matrix)
     vector<int> row(m,-1);
     vector<int> column(n,-1);
     
+    //identifying zeroes place
     for(int i=0;i<m;i++) { 
         for(int j=0;j<n;j++) {
             if(matrix[i][j]==0) {
@@ -15,7 +16,8 @@ void setZeros(vector<vector<int>> &matrix)
             }
         }
     }
-
+    
+    //setting zeroes
     for(int i=0;i<m;i++){
         if(row[i]==0){
             for(int j=0;j<n;j++){
